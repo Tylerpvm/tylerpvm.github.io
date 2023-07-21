@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <!-- 
@@ -12,28 +13,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank you</title>
 
+    <script>
+        function printQuery() {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                document.write(pair[0] + ": " + pair[1] + "<br />");
+            }
+        }
+    </script>
+
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
-    
+
     <div class="nav-container">
         <h1>Online Profile</h1>
         <nav class="navbar">
             <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="ed.html">Education</a></li>
-               <li><a href="hobbies.html">Hobbies</a></li>
-               <li><a href="contact.html">Contact</a></li> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ed.html">Education</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-   </div>
+    </div>
+
+    <div class="container">
+        <h2>Thanks again! I'll reach out soon!</h2>
+
+        <script>
+            printQuery();
+        </script>
+    </div>
 
 
 
-
-
-   <footer class="footer">Tyler Pitcock &copy; 2023</footer>
+    <footer class="footer">Tyler Pitcock &copy; 2023</footer>
 
 </body>
+
 </html>

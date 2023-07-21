@@ -23,3 +23,10 @@ h2, p, nav {
     color: ;
     font-family: 'Roboto', sans-serif;
 }
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+

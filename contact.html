@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <!-- 
@@ -7,7 +8,7 @@
         Date:       07/20/2023
         Assingment: Online Profile
     -->
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
@@ -15,25 +16,64 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
-    
+
     <div class="nav-container">
         <h1>Online Profile</h1>
         <nav class="navbar">
             <ul>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="ed.html">Education</a></li>
-               <li><a href="hobbies.html">Hobbies</a></li>
-               <li><a href="contact.html">Contact</a></li> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ed.html">Education</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-   </div>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>
+                        <h2>Feel free to reach out!</h2>
+                        <p>Leave me a message and with your preferred contact method and I'll get back to you as soon as
+                            possible!</p>
+                    </legend>
+                    <label for="fname">
+                        <input autofocus type="text" name="fname" id="fname" required placeholder="First Name">
+                    </label>
+                    <label for="lname">
+                        <input type="text" name="lname" id="lname" required placeholder="Last Name">
+                    </label>
+                    <label for="phone">
+                        <input type="text" name="phone" id="phone" required placeholder="Phone Number">
+                    </label>
+                    <label for="email">
+                        <input type="text" name="email" id="email" required placeholder="Email Address">
+                    </label>
+                    <label for="contactpref">
+                        Contact Preference:
+                        <select name="contactpref" id="contactpref">
+                            <option value="phone">Phone</option>
+                            <option value="text">Text</option>
+                            <option value="email">Email</option>
+                        </select>
+                    </label>
+                    <label for="contact-me">
+                        <textarea name="contact-me" id="contact-me" cols="30" rows="10"
+                            placeholder="Type your message here!"></textarea>
+                    </label>
+                    <input type="submit" value="Place Order" id="submit">
+                </fieldset>
+            </form>
+        </div>
+    </div>
 
 
 
+    <footer class="footer">Tyler Pitcock &copy; 2023</footer>
 
-
-   <footer class="footer">Tyler Pitcock &copy; 2023</footer>
-    
 </body>
+
 </html>
