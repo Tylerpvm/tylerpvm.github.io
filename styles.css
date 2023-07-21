@@ -3,3 +3,23 @@
     Date:       07/20/2023
     Assingment: Online Profile
 */
+
+:root {
+    --back-color-prim: #D2A679;
+    --back-color-sec: #CCCCCC;
+    --back-color-third: ;
+    --font-color-prim: #404040;
+    --font-color-sec: ;
+    --font-color-thrid: ;
+    --shadow-prim: ;
+    --shadow-sec: ;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+h2, p, nav {
+    color: ;
+    font-family: 'Roboto', sans-serif;
+}
