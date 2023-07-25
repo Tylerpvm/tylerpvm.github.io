@@ -58,14 +58,14 @@ footer {
 }
 
 .navbar ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     list-style-type: none;
 }
 
 .navbar ul li a {
     text-decoration: none;
     padding: 5px;
-    margin-right: 4rem;
     border-radius: 3px;
     background-color: var(--back-color-prim);
     color: var(--font-color-prim);
@@ -230,14 +230,16 @@ label {
 .assignments-box {
     margin: 20px 10px 30px 0;
     text-align: left;
-}
-
-.assignments-box ul {
-    list-style-type: none;
     background-color: var(--back-color-thr);
     border-radius: .25rem;
     box-shadow: var(--shadow-prim);
     padding: 15px;
+    text-align: center;
+}
+
+.assignments-box ul {
+    list-style-type: none;
+    text-align: left;   
 }
 
 .assignments-box li {
@@ -299,3 +301,77 @@ table p {
 }
 
 /*-----thank you page-----*/
+
+
+/*-----responsive design-----*/
+@media(max-width: 975px) {
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about-me img {
+        margin: auto;
+    }
+
+    .about-mikko {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-areas: 
+        'text text'
+        'img1 img2';
+    }
+
+    .mikko-text {
+        grid-area: text;
+    }
+
+    .mikko-img1 {
+        grid-area: img1;
+    }
+
+    .mikko-img2 {
+        grid-area: img2;
+    }
+
+    .ed-top-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 695px) {
+    .navbar ul {
+        grid-template-columns: 1fr;
+        margin: auto;
+        width: 90%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .navbar ul li a {
+        display: block;
+    }
+
+    .navbar li {
+        padding-bottom: 20px;
+    }
+    
+    .container {
+        margin: 10px auto;
+    }
+}
+
+@media(max-width: 350px) {
+    .image-grid img,  .hockey-img img {
+        max-width: 200px;
+        margin: auto;
+    }
+
+    .hockey-text p,
+.photoagraphy-text p {
+    margin: auto 10px;
+}    
+}
+/*-----responsive design-----*/
+
+
