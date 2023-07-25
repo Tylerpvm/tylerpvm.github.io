@@ -80,6 +80,7 @@ footer {
 .fa-solid {
     padding: 0 10px 0 5px;
 }
+
 /*-----navbar-----*/
 
 /*-----container-----*/
@@ -89,6 +90,7 @@ footer {
     background-color: var(--back-color-sec);
     box-shadow: var(--shadow-thr);
 }
+
 /*-----container-----*/
 
 
@@ -106,6 +108,7 @@ footer {
     border-radius: 5px;
     box-shadow: var(--shadow-sec);
 }
+
 /*-----about me section-----*/
 
 /*-----about mikko section-----*/
@@ -121,14 +124,17 @@ footer {
     border-radius: 5px;
     box-shadow: var(--shadow-sec);
 }
+
 /*-----about mikko section-----*/
 /*-----home page-----*/
 
 
 /*-----hobbies page-----*/
-.hockey-text p, .photoagraphy-text p {
+.hockey-text p,
+.photoagraphy-text p {
     margin: 0 100px 0 100px;
 }
+
 /*-----hockey section-----*/
 #champs {
     width: 100%;
@@ -145,6 +151,7 @@ footer {
     border-radius: 5px;
     box-shadow: var(--shadow-sec);
 }
+
 /*-----hockey section-----*/
 
 /*-----photography section-----*/
@@ -160,6 +167,7 @@ footer {
     border-radius: 5px;
     box-shadow: var(--shadow-sec);
 }
+
 /*-----photography section-----*/
 /*-----hobbies page-----*/
 
@@ -172,12 +180,15 @@ legend {
     padding-bottom: 30px;
 }
 
-label{
+label {
     display: block;
     padding-bottom: 5px;
 }
 
-#fname, #lname, #phone, #email{
+#fname,
+#lname,
+#phone,
+#email {
     padding: 10px;
     border-radius: .25rem;
     width: 90%;
@@ -198,12 +209,13 @@ label{
     background-color: antiquewhite;
 }
 
-#submit{
+#submit {
     padding: 10px;
     border-radius: .25rem;
     width: 100px;
     background-color: antiquewhite;
 }
+
 /*-----contact page-----*/
 
 /*-----education page-----*/
@@ -240,6 +252,7 @@ label{
 .assignments-box ul a:hover {
     text-decoration: underline;
 }
+
 /*-----ed top container-----*/
 
 /*-----tables-----*/
@@ -252,7 +265,8 @@ table {
     border-collapse: collapse;
 }
 
-th, .sidebar {
+th,
+.sidebar {
     border: 2px solid black;
     font-size: 20px;
 }
@@ -262,13 +276,15 @@ td {
     padding: 5px 10px 5px 10px;
 }
 
-.table-one, .table-two {
+.table-one,
+.table-two {
     padding-bottom: 20px;
 }
 
 table p {
     font-style: italic;
 }
+
 /*-----tables-----*/
 /*-----education page-----*/
 
@@ -281,7 +297,5 @@ table p {
     box-shadow: var(--shadow-thr);
     padding-bottom: 20px;
 }
+
 /*-----thank you page-----*/
-
-
-
