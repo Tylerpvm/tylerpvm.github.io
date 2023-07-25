@@ -1,0 +1,51 @@
+/* Author:     Tyler Pitcock 
+   Date:       6/7/2023 
+   Assignment: Pretty About You
+   Filename:   style.css 
+*/
+
+body {
+    background-color: rgb(119, 169, 169);
+    text-align: center;
+}
+
+header {
+    font-variant: small-caps;
+    font-style: italic;
+    color: crimson;
+    font-size: 25px;
+}
+
+nav {
+    background-color: beige;
+    box-shadow: 20px 15px 15px gray;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+    font-size: 24px;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    color: brown;
+}
+
+p {
+    font: italic small-caps bold 12px/30px Verdana;
+}
+
+#storage {
+    border: dotted 2px;
+    width: 80%;
+    margin: auto;
+    box-shadow: 2px 5px 5px gray;
+}
+
+#link {
+    font-size: 12px;
+}

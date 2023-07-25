@@ -1,0 +1,163 @@
+/*
+    Author:     Tyler Pitcock
+    Date:       06/23/23
+    Assignment: Fit For Fun Fitness Club
+*/
+
+/* All Pages */
+body {
+    background-color: crimson;
+}
+
+nav {
+    float: left;
+    background-color: #e6ffff;
+    border: solid 2px;
+    border-radius: 5px;
+    line-height: 5;
+    text-align: center;
+    padding-top: 100px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 100px;
+}
+
+a:visited {
+    color: crimson;
+}
+
+a:hover {
+    color: blue;
+    box-shadow: 5px 5px 5px gray;
+
+}
+
+/* Home Page & Thank You Page*/
+#storage {
+    background-color: #e6ffff;
+    border: solid 3px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 145px;
+    margin-right: 145px;
+    box-shadow: 5px 5px 25px;
+}
+
+#storage h1 {
+    background-color: gray;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: double 3px;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0px 10px 0px;
+    border: solid 1px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 25px;
+}
+
+h4 {
+    text-align: center;
+    padding-top: 2px;
+}
+
+/* Class Calander Page */
+table {
+    margin: 10px 0px 0px 145px;
+    width: 80%;
+    border: solid 3px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    background-color: #e6ffff;
+    table-layout: fixed;
+    box-shadow: 5px 5px 25px;
+}
+
+th,
+td {
+    width: 33%;
+    border: solid 2px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+th {
+    height: 30px;
+    background-color: gray;
+}
+
+td {
+    vertical-align: top;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+td > p {
+    font-style: italic;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: crimson;
+}
+
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+/* Booking Page */
+#form {
+    background-color: #e6ffff;
+    border: solid 3px;
+    border-radius: 5px;
+    margin: 10px 0px 0px 145px;
+    width: 80%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 5px 5px 25px;
+}
+
+#form h2 {
+    background-color: gray;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: double 3px;
+    border-radius: 10px;
+}
+
+#contactinfo label {
+    display: block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+#contactinfo input {
+    position: relative;
+    width: 100%
+}
+
+#search {
+    margin: 10px;
+    text-align: center;
+}
+
+/* All Pages */
+footer {
+    bottom: 0;
+    width: 99%;
+    height: 80px;
+    background-color: dimgrey;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#reachus a {
+    color: #e6ffff;
+}

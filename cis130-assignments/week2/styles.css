@@ -1,0 +1,114 @@
+/* Name:       Tyler Pitcock
+   Date:       06/15/2023
+   Assignment: About A Company
+*/
+
+body,
+html {
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: beige;
+}
+
+nav {
+    background-color: burlywood;
+    font-size: x-large;
+    text-align: center;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover {
+    color: green;
+}
+
+.fa-brands {
+    color: rgba(25, 15, 105, .5);
+    padding-left: 5px;
+    font-size: 2em;
+}
+
+.socialmedia {
+    position: fixed;
+    top: 50px;
+    right: 80px;
+}
+
+header {
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Brush Script MT', papyrus, fantasy;
+}
+
+.bg {
+    float: left;
+    background-image: url(img/photo2.webp);
+
+    height: 75%;
+    width: 50%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(0px);
+    margin-right: 25px;
+}
+
+#storage {
+    font-family: 'Copperplate', papyrus, fantasy;
+    border-style: double;
+}
+
+h1 {
+    margin-left: 10px;
+    font-size: xx-large;
+    font-family: 'Brush Script MT', papyrus, fantasy;
+}
+
+dt {
+    font-size: 30px;
+    font-family: 'Brush Script MT', papyrus, fantasy;
+    margin-top: 5px;
+    margin-left: 310px;
+    border-bottom: solid;
+}
+
+dd {
+
+    font-family: 'Copperplate', papyrus, fantasy;
+    margin-top: 5px;
+    margin-left: 330px;
+}
+
+#drinkLat {
+    float: left;
+    border: solid;
+}
+
+#drinkCoff {
+    float: left;
+    border: solid;
+}
+
+#breakfast {
+    float: left;
+    border: solid;
+}
+
+footer {
+    background-color: brown;
+    text-align: center;
+    clear: left;
+}
+
+#contactInfo {
+    padding-bottom: 5px;
+}

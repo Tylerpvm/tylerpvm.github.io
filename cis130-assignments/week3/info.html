@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 
+        Author:     Tyler Pitcock
+        Date:       06/23/2023
+        Assignment: Fit For Fun Fitness Club
+     -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Home</a> <br>
+        <a href="classes.html">Class Calander</a> <br>
+        <a href="info.html">Booking</a>
+    </nav>
+
+    <div id="form">
+        <h2>Book some classes today!</h2>
+        <form method="get" action="thankyou.html">
+            <fieldset id="contactinfo">
+                <legend>
+                    Contact Information
+                </legend>
+                <label for="fname">
+                    First Name:
+                    <input autofocus type="text" name="fname" id="fname" required placeholder="First Name">
+                </label>
+                <label for="lname">
+                    Last Name:
+                    <input type="text" name="lname" id="lname" required placeholder="Last Name">
+                </label>
+                <label for="email">
+                    Email:
+                    <input type="text" name="email" id="email" required placeholder="Email Address">
+                </label>
+                <label for="phone">
+                    Phone Number:
+                    <input type="text" name="phone" id="phone" required placeholder="Phone Number">
+                </label>
+                <label for="contactpref">
+                    Contact Preference:
+                    <select name="contactpref" id="contactpref">
+                        <option value="phone">Phone</option>
+                        <option value="text">Text</option>
+                        <option value="email">Email</option>
+                        <option value="owl">Owl</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Classes Offered
+                </legend>
+                <label for="crosstraining">
+                    <input type="checkbox" name="crosstraining" id="crosstraining">
+                    Crosstraining
+                </label>
+                <label for="sprint">
+                    <input type="checkbox" name="sprint" id="sprint">
+                    Sprint
+                </label>
+                <label for="spin">
+                    <input type="checkbox" name="spin" id="spin">
+                    Spin
+                </label>
+                <label for="bodypump">
+                    <input type="checkbox" name="bodypump" id="bodypump">
+                    BodyPump
+                </label>
+                <label for="bodycombat">
+                    <input type="checkbox" name="bodycombat" id="bodycombat">
+                    BodyCombat
+                </label>
+                <label for="stepinterval">
+                    <input type="checkbox" name="stepinterval" id="stepinterval">
+                    Step Interval
+                </label>
+                <label for="advancedcrosstraining">
+                    <input type="checkbox" name="advancedcrosstraining" id="advancedcrosstraining">
+                    Advanced Cross Training
+                </label>
+                <label for="mixedfit">
+                    <input type="checkbox" name="mixedfit" id="mixedfit">
+                    MixedFIT
+                </label>
+                <label for="zumba">
+                    <input type="checkbox" name="zumba" id="zumba">
+                    Zumba
+                </label>
+                <br>
+                <br>
+                <label for="am">
+                    Time:
+                    <input type="radio" name="time" id="am">
+                    AM
+                </label>
+                <label for="pm">
+                    <input type="radio" name="time" id="pm">
+                    PM
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <label for="additionalinfo">
+                    <textarea name="additionalinfo" id="additionalinfo" cols="30" rows="10"
+                        placeholder="Please enter any addtional comments or concerns here!"></textarea>
+                </label>
+            </fieldset>
+            <div id="search">
+            <input type="submit" value="Submit" style="height: 2em; width: 25em;">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <h4>Fit for Fun Fitness Club</h4>
+        <p id="reachus">&bull; Call us @ <a href="tel:417-555-5555">4175555555</a> &bull; Email us @ <a
+                href="mailto:fitforfunfitness@email.com">fitforfunfitness@email.com</a></p>
+    </footer>
+</body>
+
+</html>

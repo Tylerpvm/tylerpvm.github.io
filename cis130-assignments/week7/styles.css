@@ -1,0 +1,103 @@
+/* 
+    Name:       Tyler Pitcock
+    Date:       7/19/2023
+    Assignment: Bootstrap B&B
+*/
+
+body {
+    background-color: bisque;
+    text-align: center;
+}
+
+nav {
+    background-color: antiquewhite;
+}
+
+nav h2 {
+    border-right: 3px solid rgba(0, 0, 0, 0.304);
+    padding-right: 10px;
+}
+
+.navbar ul {
+   padding-left: 10px; 
+}
+
+a:hover {
+    background-color: burlywood;
+    border-radius: .25rem;
+    box-shadow: 2px 2px 2px brown;
+}
+
+.container {
+    max-width: 900px;
+    margin-top: 30px;
+}
+
+.carousel-caption {
+    background-color: rgba(222, 184, 135, 0.552);
+    border-radius: .25rem;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.525);
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    color: darkgreen;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bold;
+    color: brown;
+}
+
+.container-cards {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px;
+}
+
+.card-body a {
+    background-color: #3333ff;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: .25rem;
+    box-shadow: 2px 2px 2px gray;
+}
+
+.card-body a:hover {
+    color: antiquewhite;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.form-container {
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 50px;
+    margin-bottom: 110px;
+}
+
+.embedded-map {
+    padding-top: 30px;
+}
+
+footer {
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 5px;
+}
+
+@media(max-width: 892px) {
+    .container-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 594px) {
+    .container-cards {
+        grid-template-columns: none;
+    }
+}

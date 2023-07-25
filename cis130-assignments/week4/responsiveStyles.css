@@ -1,0 +1,85 @@
+/*
+    Author:     Tyler Pitcock
+    Date:       06/29/23
+    Assignment: Responsive Travel
+*/
+
+.link_4 {
+    display: contents;
+}
+
+a:link {
+    padding-right: 26px;
+}
+
+.socialmedia {
+    right: 55px;
+}
+
+.header,
+.container {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 85%;
+}
+
+.explore .img_1,
+.img_3 {
+    display: none;
+}
+
+@media screen and (min-width: 705px) {
+    .link_2 {
+        display: contents;
+    }
+
+    .header {
+        padding: 10px 100px 10px 100px;
+        font-size: 25px;
+    }
+
+    .learn,
+    .plan {
+        float: left;
+        width: 45%;
+        margin-left: 20px;
+    }
+
+    .content:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 1038px) {
+    .link_3 {
+        display: contents;
+    }
+
+    .explore .img_1,
+    .img_3 {
+        display: block;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .header {
+        font-size: 30px;
+    }
+
+    .explore img {
+        float: left;
+        width: 30%;
+        margin-left: 15px;
+        margin-bottom: 50px;
+    }
+
+}

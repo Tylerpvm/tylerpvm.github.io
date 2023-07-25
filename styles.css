@@ -7,26 +7,281 @@
 :root {
     --back-color-prim: #D2A679;
     --back-color-sec: #CCCCCC;
-    --back-color-third: ;
+    --back-color-thr: #990000c6;
     --font-color-prim: #404040;
-    --font-color-sec: ;
-    --font-color-thrid: ;
-    --shadow-prim: ;
-    --shadow-sec: ;
+    --shadow-prim: 2px 2px 2px darkgrey;
+    --shadow-sec: 6px 6px 10px grey;
+    --shadow-thr: 2px 2px 6px black;
 }
 
-h1 {
-    font-family: 'Dancing Script', cursive;
+html {
+    box-sizing: border-box;
 }
 
-h2, p, nav {
-    color: ;
+body {
+    background-color: var(--back-color-prim);
+    margin: 0;
+    line-height: 1.3;
+    color: var(--font-color-prim);
     font-family: 'Roboto', sans-serif;
 }
 
-table, th, td {
-    border: 1px solid black;
-    text-align: center;
+h2 {
+    padding: 20px;
 }
+
+p {
+    padding: 5px;
+}
+
+hr {
+    clear: both;
+}
+
+footer {
+    background-color: var(--back-color-sec);
+    text-align: center;
+    padding: 20px;
+}
+
+
+/*-----navbar-----*/
+.nav-container {
+    background-color: var(--back-color-sec);
+    padding-bottom: 20px;
+    box-shadow: var(--shadow-thr);
+}
+
+.nav-container h1 {
+    font-family: 'Dancing Script', cursive;
+    padding: 20px 0 20px 40px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 4rem;
+    border-radius: 3px;
+    background-color: var(--back-color-prim);
+    color: var(--font-color-prim);
+    box-shadow: var(--shadow-prim);
+}
+
+.navbar ul li a:hover {
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.fa-solid {
+    padding: 0 10px 0 5px;
+}
+/*-----navbar-----*/
+
+/*-----container-----*/
+.container {
+    text-align: center;
+    margin: 10px 150px;
+    background-color: var(--back-color-sec);
+    box-shadow: var(--shadow-thr);
+}
+/*-----container-----*/
+
+
+/*-----home page-----*/
+/*-----about me section-----*/
+.about-me {
+    padding: 50px;
+}
+
+.about-me img {
+    float: right;
+    max-width: 100%;
+    margin: 0 50px 20px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: var(--shadow-sec);
+}
+/*-----about me section-----*/
+
+/*-----about mikko section-----*/
+.about-mikko {
+    display: flex;
+    margin: 0 50px 0 50px;
+}
+
+.about-mikko img {
+    max-width: 100%;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: var(--shadow-sec);
+}
+/*-----about mikko section-----*/
+/*-----home page-----*/
+
+
+/*-----hobbies page-----*/
+.hockey-text p, .photoagraphy-text p {
+    margin: 0 100px 0 100px;
+}
+/*-----hockey section-----*/
+#champs {
+    width: 100%;
+}
+
+.hockey-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.hockey-img img {
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: var(--shadow-sec);
+}
+/*-----hockey section-----*/
+
+/*-----photography section-----*/
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 20px;
+}
+
+.image-grid img {
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: var(--shadow-sec);
+}
+/*-----photography section-----*/
+/*-----hobbies page-----*/
+
+/*-----contact page-----*/
+fieldset {
+    border: 0;
+}
+
+legend {
+    padding-bottom: 30px;
+}
+
+label{
+    display: block;
+    padding-bottom: 5px;
+}
+
+#fname, #lname, #phone, #email{
+    padding: 10px;
+    border-radius: .25rem;
+    width: 90%;
+    background-color: antiquewhite;
+}
+
+#contactpref {
+    padding: 10px;
+    border-radius: .25rem;
+    background-color: antiquewhite;
+}
+
+#contact-me {
+    font-family: 'roboto', sans-serif;
+    border-radius: .25rem;
+    width: 90%;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+#submit{
+    padding: 10px;
+    border-radius: .25rem;
+    width: 100px;
+    background-color: antiquewhite;
+}
+/*-----contact page-----*/
+
+/*-----education page-----*/
+/*-----ed top container-----*/
+.ed-top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr;
+    margin: 0 30px 20px 30px;
+}
+
+.assignments-box {
+    margin: 20px 10px 30px 0;
+    text-align: left;
+}
+
+.assignments-box ul {
+    list-style-type: none;
+    background-color: var(--back-color-thr);
+    border-radius: .25rem;
+    box-shadow: var(--shadow-prim);
+    padding: 15px;
+}
+
+.assignments-box li {
+    padding: 10px;
+}
+
+.assignments-box ul a {
+    text-decoration: none;
+    color: var(--back-color-prim)
+}
+
+.assignments-box ul a:hover {
+    text-decoration: underline;
+}
+/*-----ed top container-----*/
+
+/*-----tables-----*/
+table {
+    border: 2px solid black;
+    margin: auto;
+    color: var(--back-color-prim);
+    background-color: var(--back-color-thr);
+    box-shadow: var(--shadow-thr);
+    border-collapse: collapse;
+}
+
+th, .sidebar {
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px 10px 5px 10px;
+}
+
+.table-one, .table-two {
+    padding-bottom: 20px;
+}
+
+table p {
+    font-style: italic;
+}
+/*-----tables-----*/
+/*-----education page-----*/
+
+
+/*-----thank you page-----*/
+.thank-you-container {
+    text-align: center;
+    margin: 130px auto 140px auto;
+    background-color: var(--back-color-sec);
+    box-shadow: var(--shadow-thr);
+    padding-bottom: 20px;
+}
+/*-----thank you page-----*/
+
 
 

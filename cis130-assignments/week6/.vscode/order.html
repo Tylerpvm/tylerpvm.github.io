@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- 
+        Author:     Tyler Pitcock
+        Date:       07/05/2023
+
+        Assignment: Cheech's Flexible Pizza Parlor
+     -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="flexStyles.css">
+    <script src="https://kit.fontawesome.com/5f523fed1c.js" crossorigin="anonymous"></script>
+    <title>Order</title>
+</head>
+
+<body>
+    <div class="header-content">
+        <img src="img/header.jpg" id="logo" alt="Shop" style="width: 100%;">
+        <h1 id="shop-name">Cheech's Pizza Parlor</h1>
+    </div>
+
+    <div class="nav-bar">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order Online</a></li>
+                <li><a href="">Our Location</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="columns-container">
+        <div class="columns">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>
+                        <h1>Cheech has you covered.</h1>
+                        <h3>Order now and we'll guarantee your order in 30 minutes or less!</h3>
+                    </legend>
+                    <label for="fname">
+                        <input autofocus type="text" name="fname" id="fname" required placeholder="First Name">
+                    </label>
+                    <label for="lname">
+                        <input type="text" name="lname" id="lname" required placeholder="Last Name">
+                    </label>
+                    <label for="phone">
+                        <input type="text" name="phone" id="phone" required placeholder="Phone Number">
+                    </label>
+                    <div class="order-container">
+                        <label for="pizza-choice" class="pizza-choice">
+                            <select name="pizza-choice" id="pizza-choice">
+                                <option value="cheese">Cheese</option>
+                                <option value="pepperoni">Pepperoni</option>
+                                <option value="meat-lovers">Meat Lovers</option>
+                                <option value="supreme">Supreme</option>
+                                <option value="hawaiian">Hawaiian</option>
+                                <option value="veggie">Veggie</option>
+                            </select>
+                        </label>
+                        <label for="number" class="number">
+                            <input type="number" name="number" id="number" min="1" max="99" required
+                                placeholder="How many pizza's?">
+                        </label>
+                    </div>
+                    <label for="special-requests">
+                        <textarea name="specialrequests" id="special-requests" cols="30" rows="10"
+                            placeholder="Do you have any special requests?"></textarea>
+                    </label>
+                    <input type="submit" value="Place Order" id="submit">
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="columns">
+            <div class="testimonial">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p class="review">Best pizza I've ever had, but... It took longer than 30 minutes...</p>
+                <p class="review-name">Karen</p>
+                <p class="review-date">7/6/2023</p>
+            </div>
+
+            <div class="connect">
+                <h2>Connect with us</h2>
+                <p>For support:</p>
+                <p>Email us at: <a href="mailto:cheechpizza@gmail.com">cheechpizza@gmail.com</a></p>
+            </div>
+
+            <div class="social-media">
+                <h2>Social Media</h2>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.snapchat.com/" target="_blank"><i class="fa-brands fa-square-snapchat"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Cheech's Flexible Pizza Parlor &copy; 2023</p>
+    </footer>
+</body>
+
+</html>
